@@ -21,6 +21,6 @@ const groupPrice = tickets.calculateTicketPrice(5, 15.5);
 assertEqual(groupPrice, 70, '10% group discount for 5 tickets');
 
 const vipPrice = tickets.calculateTicketPrice(3, 15.5, true);
-assertEqual(vipPrice, 69, '50% VIP surcharge for premium seating');
+assertEqual(vipPrice, 70, '50% VIP surcharge for premium seating');
 
 process.exitCode = failures > 0 ? 1 : 0;
